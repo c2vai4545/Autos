@@ -38,14 +38,6 @@ public class Auto {
         this.estado = estado;
     }
 
-    public int getIdAuto() {
-        return idAuto;
-    }
-
-    public void setIdAuto(int idAuto) {
-        this.idAuto = idAuto;
-    }
-
     @Override
     public String toString() {
         String comprado;

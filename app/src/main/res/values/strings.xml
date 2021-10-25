@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Autos</string>
+    <string-array name="Color">
+        <item>Rojo</item>
+        <item>Verde</item>
+        <item>Amarillo</item>
+        <item>Otro</item>
+    </string-array>
 </resources>
