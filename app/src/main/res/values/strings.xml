@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Autos</string>
+    <string name="verLista">Ver Lista</string>
+    <string name="ingresarNuevo">Ingresar Nuevo</string>
+    <string name="eliminar">Eliminar no disponibles</string>
     <string-array name="Color">
         <item>Rojo</item>
         <item>Verde</item>

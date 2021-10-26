@@ -31,13 +31,17 @@ public class NuevoAutoActivity extends AppCompatActivity {
         String otroColor=((EditText)findViewById(R.id.otroColor)).getText().toString();
 
 
-        if(color.equals("Otro")){
-            if(otroColor.isEmpty()){
-                Toast.makeText(this,"Debe ingresar un color.",Toast.LENGTH_SHORT).show();
-            }else {
+        if (!marca.isEmpty()){
+            Toast.makeText(this,"Debe ingresar una marca",Toast.LENGTH_SHORT).show();
+
+        }else{
+        if(color.equals("Otro")) {
+            if (otroColor.isEmpty()) {
+                Toast.makeText(this, "Debe ingresar un color.", Toast.LENGTH_SHORT).show();
+            } else {
                 color = otroColor;
             }
-
+        }
         }
         Auto auto=new Auto(color,marca);
         listaDeAutos.agregarAuto(auto);
