@@ -2,6 +2,8 @@
     <string name="app_name">Autos</string>
     <string name="verLista">Ver Lista</string>
     <string name="ingresarNuevo">Ingresar Nuevo</string>
+    <string name="ingresarAuto">Ingresar Auto</string>
+    <string name="infoAutoNuevo">Ingrese el auto nuevo a la lista</string>
     <string name="eliminar">Eliminar no disponibles</string>
     <string-array name="Color">
         <item>Rojo</item>

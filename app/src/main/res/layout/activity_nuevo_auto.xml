@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ingrese el auto nuevo a la lista"
+        android:text="@string/infoAutoNuevo"
         />
     <EditText
         android:id="@+id/ingresarMarca"
@@ -39,7 +39,7 @@
         android:id="@+id/botonIngresarAuto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ingresar Auto"
+        android:text="@string/ingresarAuto"
         android:onClick="ingresarNuevo"
         />
 
