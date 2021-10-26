@@ -40,4 +40,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent=new Intent(this,NuevoAutoActivity.class);
         startActivity(intent);
     }
+
+    public void eliminarNoDisponible(View view){
+        lista.eliminarNoDisponible();
+        Toast.makeText(this,"autos no disponibles han sido eliminados",Toast.LENGTH_SHORT).show();
+    }
+
 }

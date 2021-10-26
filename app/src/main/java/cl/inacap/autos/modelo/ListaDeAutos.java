@@ -24,4 +24,12 @@ public class ListaDeAutos {
         return listaDeAutos;
     }
 
+    public void eliminarNoDisponible(){
+        for (int i=0; i<listaDeAutos.size();i++){
+            if(!listaDeAutos.get(i).isEstado()==Auto.disponible){//no Esta Disponible
+                listaDeAutos.remove(i);
+                i--;
+            }
+        }
+    }
 }
