@@ -31,7 +31,7 @@ public class NuevoAutoActivity extends AppCompatActivity {
         String otroColor=((EditText)findViewById(R.id.otroColor)).getText().toString();
 
 
-        if (!marca.isEmpty()){
+        if (marca.isEmpty()){
             Toast.makeText(this,"Debe ingresar una marca",Toast.LENGTH_SHORT).show();
 
         }else{
