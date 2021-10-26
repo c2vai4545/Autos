@@ -1,14 +1,13 @@
 package cl.inacap.autos.modelo;
 
 public class Auto {
-    private int idAuto;
+
     private String color;
     private String marca;
     private boolean estado;
     public static final boolean disponible=true;
 
     public Auto(String color, String marca) {
-        this.idAuto = idAuto;
         this.color = color;
         this.marca = marca;
         this.estado = disponible;
