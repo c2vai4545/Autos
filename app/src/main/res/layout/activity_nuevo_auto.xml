@@ -22,10 +22,12 @@
         android:hint="Marca del auto"
         />
     <Spinner
+
         android:id="@+id/ingresarColor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:entries="@array/Color"
+
         />
     <EditText
         android:id="@+id/otroColor"
@@ -42,5 +44,6 @@
         android:text="@string/ingresarAuto"
         android:onClick="ingresarNuevo"
         />
+
 
 </LinearLayout>
