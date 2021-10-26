@@ -8,7 +8,7 @@ public class ListaDeAutos {
 
     private ListaDeAutos(){
         listaDeAutos=new ArrayList<>();
-        agregarAuto(new Auto("Verde","Audi"));
+        //agregarAuto(new Auto("Verde","Audi"));
 
     }
     public static ListaDeAutos getInstancia(){
