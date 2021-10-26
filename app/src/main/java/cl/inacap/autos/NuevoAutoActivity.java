@@ -9,6 +9,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import cl.inacap.autos.modelo.Auto;
 import cl.inacap.autos.modelo.ListaDeAutos;
 
 public class NuevoAutoActivity extends AppCompatActivity {
@@ -36,7 +37,11 @@ public class NuevoAutoActivity extends AppCompatActivity {
             }else {
                 color = otroColor;
             }
+            Auto auto=new Auto(color,marca);
+            listaDeAutos.agregarAuto(auto);
+            finish();
         }
+
     }
 
 }
