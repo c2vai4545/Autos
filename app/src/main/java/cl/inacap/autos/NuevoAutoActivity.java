@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -26,27 +27,58 @@ public class NuevoAutoActivity extends AppCompatActivity {
     }
 
     public void ingresarNuevo(View view){
-        String marca=((EditText) findViewById(R.id.ingresarMarca)).getText().toString();
+
+
+
+        String marca= ""; //((EditText) findViewById(R.id.ingresarMarca)).getText().toString();
         String color=((Spinner)findViewById(R.id.ingresarColor)).getSelectedItem().toString();
         String otroColor=((EditText)findViewById(R.id.otroColor)).getText().toString();
+        String otraMarca=((EditText) findViewById(R.id.rMarca)).getText().toString();
 
 
-        if (marca.isEmpty()){
-            Toast.makeText(this,"Debe ingresar una marca",Toast.LENGTH_SHORT).show();
+        RadioGroup rgMarca = (RadioGroup) findViewById(R.id.rgMarca);
+        int idRg= rgMarca.getCheckedRadioButtonId();
+        switch (idRg) {
+            case R.id.rAudi:
+                marca += "Audi";
+                break;
+            case R.id.rVw:
+                marca +="VolksWagen";
+                break;
+            case R.id.rFord:
+                marca+="Ford";
+                break;
+            case R.id.otra:
 
-        }else{
+                    if ((otraMarca.isEmpty())) {
+
+                        Toast.makeText(this, "Debe ingresar una marca.", Toast.LENGTH_SHORT).show();
+                    }else {
+                        marca += otraMarca;
+                    }
+
+                break;
+
+            }
         if(color.equals("Otro")) {
             if (otroColor.isEmpty()) {
+
                 Toast.makeText(this, "Debe ingresar un color.", Toast.LENGTH_SHORT).show();
+                finish();
+
             } else {
-                color = otroColor;
+                color += otroColor;
+
             }
         }
-        }
+
         Auto auto=new Auto(color,marca);
         listaDeAutos.agregarAuto(auto);
         finish();
 
+
+        }
+
+
     }
 
-}

@@ -5,6 +5,12 @@
     <string name="ingresarAuto">Ingresar Auto</string>
     <string name="infoAutoNuevo">Ingrese el auto nuevo a la lista</string>
     <string name="eliminar">Eliminar no disponibles</string>
+    <string name="rVw">VolksWagen</string>
+    <string name="rAudi">Audi</string>
+    <string name="rFord">Ford</string>
+    <string name="rOtra">Otra</string>
+    <string name="otraMarca">Ecriba la marca</string>
+    <string name="selecMarca">"Seleccione la marca del vehiculo."</string>
     <string-array name="Color">
         <item>Rojo</item>
         <item>Verde</item>

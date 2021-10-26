@@ -13,6 +13,50 @@
         android:layout_height="wrap_content"
         android:text="@string/infoAutoNuevo"
         />
+    <TextView
+        android:id="@+id/selecMarca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selecMarca"
+        />
+    <RadioGroup
+        android:id="@+id/rgMarca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <RadioButton
+            android:id="@+id/rAudi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rAudi"
+            />
+        <RadioButton
+            android:id="@+id/rVw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rVw"
+            />
+        <RadioButton
+            android:id="@+id/rFord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rFord"
+            />
+        <RadioButton
+            android:id="@+id/otra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rOtra"
+            />
+
+    </RadioGroup>
+    <EditText
+        android:id="@+id/rMarca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/otraMarca"
+        />
+<!--
     <EditText
         android:id="@+id/ingresarMarca"
         android:layout_width="match_parent"
@@ -21,6 +65,7 @@
         android:inputType="textPersonName"
         android:hint="Marca del auto"
         />
+        -->
     <Spinner
 
         android:id="@+id/ingresarColor"
@@ -29,6 +74,11 @@
         android:entries="@array/Color"
 
         />
+
+
+
+
+
     <EditText
         android:id="@+id/otroColor"
         android:layout_width="match_parent"
