@@ -2,6 +2,7 @@ package cl.inacap.autos;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -50,7 +51,7 @@ public class NuevoAutoActivity extends AppCompatActivity {
                 break;
             case R.id.otra:
 
-                    if ((otraMarca.isEmpty())) {
+                    if (otraMarca.isEmpty()) {
 
                         Toast.makeText(this, "Debe ingresar una marca.", Toast.LENGTH_SHORT).show();
                     }else {
@@ -64,10 +65,10 @@ public class NuevoAutoActivity extends AppCompatActivity {
             if (otroColor.isEmpty()) {
 
                 Toast.makeText(this, "Debe ingresar un color.", Toast.LENGTH_SHORT).show();
-                finish();
+
 
             } else {
-                color += otroColor;
+                color = otroColor;
 
             }
         }
