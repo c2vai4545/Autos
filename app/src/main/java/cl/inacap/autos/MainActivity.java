@@ -28,8 +28,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<Auto> autos=lista.getListaDeAutos();
         if(autos.size()>0) {
 
-
-            Intent intent = new Intent(this, ListaDeAutos.class);
+            Intent intent = new Intent(this, ListaDeAutosActivity.class);
             startActivity(intent);
         }
         else {
