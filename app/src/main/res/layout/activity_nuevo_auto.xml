@@ -24,38 +24,38 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         >
+
         <RadioButton
             android:id="@+id/rAudi"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/rAudi"
-            />
+            android:text="@string/rAudi" />
+
         <RadioButton
             android:id="@+id/rVw"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/rVw"
-            />
+            android:text="@string/rVw" />
+
         <RadioButton
             android:id="@+id/rFord"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/rFord"
-            />
+            android:text="@string/rFord" />
+
         <RadioButton
             android:id="@+id/otra"
-            android:layout_width="wrap_content"
+            android:layout_width="135dp"
             android:layout_height="wrap_content"
-            android:text="@string/rOtra"
-            />
+            android:text="@string/rOtra" />
 
     </RadioGroup>
+
     <EditText
         android:id="@+id/rMarca"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/otraMarca"
-        />
+        android:hint="@string/otraMarca" />
 <!--
     <EditText
         android:id="@+id/ingresarMarca"
@@ -69,7 +69,7 @@
     <Spinner
 
         android:id="@+id/ingresarColor"
-        android:layout_width="match_parent"
+        android:layout_width="136dp"
         android:layout_height="wrap_content"
         android:entries="@array/Color"
 
