@@ -37,10 +37,11 @@ public class NuevoAutoActivity extends AppCompatActivity {
             }else {
                 color = otroColor;
             }
-            Auto auto=new Auto(color,marca);
-            listaDeAutos.agregarAuto(auto);
-            finish();
+
         }
+        Auto auto=new Auto(color,marca);
+        listaDeAutos.agregarAuto(auto);
+        finish();
 
     }
 
