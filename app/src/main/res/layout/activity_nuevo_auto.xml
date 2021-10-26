@@ -15,7 +15,7 @@
         />
     <EditText
         android:id="@+id/ingresarMarca"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
@@ -23,13 +23,13 @@
         />
     <Spinner
         android:id="@+id/ingresarColor"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:entries="@array/Color"
         />
     <EditText
         android:id="@+id/otroColor"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
